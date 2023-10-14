@@ -3,11 +3,11 @@ I am a fan of OpenAI technologies, it was from their GPT that i learned about th
 
 # What do you need to work correctly?
 The structure of the network should be something like this:
-Embedding\n
-PositionalEncoding\n
-TransformerEncoder\n
-TransformerDecoder (2 inputs: input for decoder, encoder output. input for decoder on the example of GPT should be generated text)\n
-Flatten (optional)\n
+Embedding  
+PositionalEncoding  
+TransformerEncoder  
+TransformerDecoder (2 inputs: input for decoder, encoder output. input for decoder on the example of GPT should be generated text)  
+Flatten (optional)  
 Dense (softmax for classification, mse for regression. or linear)
 
 # What if you dont want to submit data to PosEncoding and Embedding?
