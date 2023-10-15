@@ -3,7 +3,7 @@ from keras.models import *
 
 
 class TransformerDecoder(Layer):
-    def __init__(self, num_heads, key_dim, fflayer1, fflayer2, attn_axes, rate=0.1):
+    def __init__(self, num_heads, key_dim, fflayer1, fflayer2, attn_axes=None, rate=0.1):
         super(TransformerDecoder, self).__init__()
         self.mha1 = MultiHeadAttention(num_heads=num_heads, key_dim=key_dim, attention_axes=attn_axes)
         self.mha2 = MultiHeadAttention(num_heads=num_heads, key_dim=key_dim, attention_axes=attn_axes)
